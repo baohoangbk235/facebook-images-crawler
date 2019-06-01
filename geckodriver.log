@@ -1,0 +1,352 @@
+1559403955242	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.O4VvhP3QRi8b"
+*** You are running in headless mode.
+1559403955700	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559403955701	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559403955701	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559403958461	Marionette	INFO	Listening on port 38389
+1559403958552	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559403966445	Marionette	INFO	Stopped listening on port 38389
+[Parent 22461, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559404006739	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PhPjc0AU2oiE"
+1559404007206	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404007206	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404007206	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404010052	Marionette	INFO	Listening on port 38259
+1559404010149	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559404017934	Marionette	INFO	Stopped listening on port 38259
+[Parent 22746, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559404022724	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xQL4jgaT3Tgj"
+1559404023209	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404023210	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404023210	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404026140	Marionette	INFO	Listening on port 42885
+1559404026233	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559404034862	Marionette	INFO	Stopped listening on port 42885
+[Parent 22992, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559404044196	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VRdinxd9USTT"
+1559404044668	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404044669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404044669	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404047630	Marionette	INFO	Listening on port 32975
+1559404047711	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559404072899	Marionette	INFO	Stopped listening on port 32975
+[Parent 23225, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript error: resource://gre/modules/WebProgressChild.jsm, line 61: TypeError: this.mm.content is null
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3600BA,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3600BA,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3600BA,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3600BA,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3600BA,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3600BA,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3600BA,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xA90006,name=PWebSocket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+1559404289021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XLh1KmDblfNz"
+1559404289538	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404289539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404289539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404292489	Marionette	INFO	Listening on port 35119
+1559404292533	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 23603, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1559404324855	Marionette	INFO	Stopped listening on port 35119
+[Parent 23603, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1559404355508	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jfwOWmEpj6RO"
+1559404355986	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404355987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404355987	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404358895	Marionette	INFO	Listening on port 44123
+1559404358923	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 23894, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 23894, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1559404409057	Marionette	INFO	Stopped listening on port 44123
+[Parent 23894, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1559404453347	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.93ixvPsNHj9m"
+1559404453822	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404453822	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404453822	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404456734	Marionette	INFO	Listening on port 39681
+1559404456775	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 24199, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 24199, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1559404488588	Marionette	INFO	Stopped listening on port 39681
+[Parent 24199, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+JavaScript error: resource://gre/modules/WebProgressChild.jsm, line 61: TypeError: this.mm.content is null
+[Parent 24199, Gecko_IOThread] WARNING: pipe error (61): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559404710627	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mnOoMwlKdwtv"
+1559404711105	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404711106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404711106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404714139	Marionette	INFO	Listening on port 34729
+1559404714154	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1559404827607	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.SyR2WbEVkQfC"
+1559404828103	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559404828103	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559404828104	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559404830911	Marionette	INFO	Listening on port 41181
+1559404830934	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559347211037%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+Exiting due to channel error.
+Exiting due to channel error.
+[Child 25057, Chrome_ChildThread] WARNING: pipe error (38): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+1559405853828	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.c6AXpfCRMpeK"
+1559405854311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559405854312	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559405854312	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559405857280	Marionette	INFO	Listening on port 44529
+1559405857340	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+1559405912295	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Skap6KLqMfYJ"
+1559405912764	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559405912764	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559405912765	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559405915811	Marionette	INFO	Listening on port 33031
+1559405915907	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559347211037%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559347211037%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 26031, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559406130330	Marionette	INFO	Stopped listening on port 33031
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 25757, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 25757, Gecko_IOThread] WARNING: pipe error (101): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559406133152	Marionette	INFO	Stopped listening on port 44529
+1559406322556	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kdP7VZAkETub"
+1559406323045	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559406323046	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559406323046	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559406326369	Marionette	INFO	Listening on port 41465
+1559406326471	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559347211037%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/5CxOSfKsClt.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 26457, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 26457, Gecko_IOThread] WARNING: pipe error (99): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559406570876	Marionette	INFO	Stopped listening on port 41465

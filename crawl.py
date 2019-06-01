@@ -10,6 +10,29 @@ import requests
 # from bs4 import BeautifulSoup
 import time
 import re
+import dlib
+import cv2
+from PIL import Image
+from io import BytesIO
+import numpy as np
+
+def read_image_from_url(url, name):
+	response = requests.get(url)
+	image = Image.open(BytesIO(response.content))
+	image = np.asarray(image)[:, :, ::-1].copy() 
+
+	# Khai báo việc sử dụng các hàm của dlib
+	hog_face_detector = dlib.get_frontal_face_detector()
+
+	# Thực hiện xác định bằng HOG và SVM
+	start = time.time()
+	faces_hog = hog_face_detector(image, 1)
+	end = time.time()
+	print("Hog + SVM Execution time: " + str(end-start))
+	count = 0
+	# Vẽ một đường bao màu xanh lá xung quanh các khuôn mặt được xác định ra bởi HOG + SVM
+	if len(faces_hog) > 0:
+	  cv2.imwrite(name, image)
 
 def downloadImage(url, img_name):
     response = requests.get(url)
@@ -36,8 +59,8 @@ def scrollToEnd(driver):
                 last_height = new_height
 
 def getImages(driver, homepage):
-        driver.get(homepage + "&sk=photos")
-        time.sleep(2)
+        # driver.get(homepage + "&sk=photos")
+        driver.get(homepage)
         # scrollToEnd(driver)
         time.sleep(2)
         imageElements = driver.find_elements_by_css_selector('a._6i9')
@@ -51,11 +74,13 @@ def getImages(driver, homepage):
             elm_img = driver.find_element_by_css_selector('img.spotlight')
             driver.implicitly_wait(20)
             image_src = elm_img.get_attribute("src")
+            print(image_src)
             p = re.compile('([0-9]+[_0-9a-zA-Z]+\.(png|jpg|gif))')
             m = p.findall(image_src)
             driver.find_element_by_css_selector('a._418x').click()
             time.sleep(2)
             driver.implicitly_wait(20)
+            read_image_from_url(image_src, m[0][0])
             full_hd_images.append(m[0][0])
         return full_hd_images
 
@@ -82,12 +107,13 @@ def logInAccount(driver):
     time.sleep(5)
 
 options = Options()
-options.set_headless()
+# options.set_headless()
 options.set_preference("dom.webnotifications.enabled", False)
 driver = webdriver.Firefox(firefox_options=options)
 logInAccount(driver)
-element = driver.find_element_by_class_name("_2s25")
-homepage = element.get_attribute("href")
+# element = driver.find_element_by_class_name("_2s25")
+# homepage = element.get_attribute("href")
+homepage = "https://www.facebook.com/luong.duong.1276/photos?lst=100010797130122%3A100002977864766%3A1559406306"
 
 # images = driver.find_elements_by_class_name("fbPhotoStarGridElement")
 # friends = getFriendList(driver, homepage)
@@ -97,8 +123,7 @@ homepage = element.get_attribute("href")
 
 images = getImages(driver, homepage)
 count = 0
-for img in images:
+# for img in images:
     # downloadImage(img, str(count))
-    print(img)
-    count += 1
+    # count += 1
 driver.close()
