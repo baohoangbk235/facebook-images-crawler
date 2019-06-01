@@ -29,8 +29,6 @@ def read_image_from_url(url, name):
 	faces_hog = hog_face_detector(image, 1)
 	end = time.time()
 	print("Hog + SVM Execution time: " + str(end-start))
-	count = 0
-	# Vẽ một đường bao màu xanh lá xung quanh các khuôn mặt được xác định ra bởi HOG + SVM
 	if len(faces_hog) > 0:
 	  cv2.imwrite(name, image)
 
@@ -40,7 +38,6 @@ def downloadImage(url, img_name):
         with open(img_name + ".jpg", 'wb') as f:
             f.write(response.content)
 
-SCROLL_PAUSE_TIME = 1
 
 def scrollToEnd(driver):
         # Get scroll height
@@ -59,8 +56,7 @@ def scrollToEnd(driver):
                 last_height = new_height
 
 def getImages(driver, homepage):
-        # driver.get(homepage + "&sk=photos")
-        driver.get(homepage)
+        driver.get(homepage + "&sk=photos")
         # scrollToEnd(driver)
         time.sleep(2)
         imageElements = driver.find_elements_by_css_selector('a._6i9')
@@ -111,9 +107,9 @@ options = Options()
 options.set_preference("dom.webnotifications.enabled", False)
 driver = webdriver.Firefox(firefox_options=options)
 logInAccount(driver)
-# element = driver.find_element_by_class_name("_2s25")
-# homepage = element.get_attribute("href")
-homepage = "https://www.facebook.com/luong.duong.1276/photos?lst=100010797130122%3A100002977864766%3A1559406306"
+element = driver.find_element_by_class_name("_2s25")
+homepage = element.get_attribute("href")
+# homepage = "https://www.facebook.com/luong.duong.1276/photos?lst=100010797130122%3A100002977864766%3A1559406306"
 
 # images = driver.find_elements_by_class_name("fbPhotoStarGridElement")
 # friends = getFriendList(driver, homepage)
