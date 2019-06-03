@@ -15,6 +15,8 @@ import cv2
 from PIL import Image
 from io import BytesIO
 import numpy as np
+import os
+
 
 def read_image_from_url(url, name):
 	response = requests.get(url)
@@ -55,6 +57,8 @@ def scrollToEnd(driver):
                         break
                 last_height = new_height
 
+SCROLL_PAUSE_TIME = 2
+
 def getImages(driver, homepage):
         driver.get(homepage + "&sk=photos")
         # scrollToEnd(driver)
@@ -76,7 +80,15 @@ def getImages(driver, homepage):
             driver.find_element_by_css_selector('a._418x').click()
             time.sleep(2)
             driver.implicitly_wait(20)
-            read_image_from_url(image_src, m[0][0])
+            match = re.search(r'https://www.facebook.com/profile.php?(.*)', homepage)
+            if match is None:
+                match = re.search(r'https://www.facebook.com/(.*)', homepage)
+            path = './images/{}'.format(match.groups()[0].replace('?',''))   
+            if not os.path.exists(path):
+                os.mkdir(path)
+            imageName = os.path.join(path, m[0][0])
+            read_image_from_url(image_src, imageName)
+
             full_hd_images.append(m[0][0])
         return full_hd_images
 
@@ -85,7 +97,7 @@ def getFriendList(driver, homepage):
         time.sleep(2)
         scrollToEnd(driver)
         time.sleep(2)
-        friendElements = driver.find_elements_by_class_name("_6i9")
+        friendElements = driver.find_elements_by_class_name("_5q6s")
         friends = [friendElement.get_attribute("href") for friendElement in friendElements]
         return friends
 
@@ -113,12 +125,11 @@ homepage = element.get_attribute("href")
 
 # images = driver.find_elements_by_class_name("fbPhotoStarGridElement")
 # friends = getFriendList(driver, homepage)
-# for friend in friends:
-#         print(friend)
+
 #download image
 
 images = getImages(driver, homepage)
-count = 0
+# count = 0
 # for img in images:
     # downloadImage(img, str(count))
     # count += 1

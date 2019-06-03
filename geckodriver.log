@@ -350,3 +350,335 @@ IPDL protocol error: Handler returned error code!
 [Parent 26457, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
 [Parent 26457, Gecko_IOThread] WARNING: pipe error (99): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
 1559406570876	Marionette	INFO	Stopped listening on port 41465
+1559547655476	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tE8TW49Jm4Do"
+1559547659964	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559547659964	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559547659964	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559547666741	Marionette	INFO	Listening on port 37815
+1559547667280	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+[Parent 3155, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Parent 3155, Gecko_IOThread] WARNING: pipe error (94): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559547795223	Marionette	INFO	Stopped listening on port 37815
+1559547798212	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LTTqsj7TKafN"
+1559547798699	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559547798700	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559547798700	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559547801792	Marionette	INFO	Listening on port 40505
+1559547801825	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1559547875637	Marionette	INFO	Stopped listening on port 40505
+[Parent 3537, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559548069895	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bjTtQbaxkkPq"
+1559548070363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559548070363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559548070363	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559548073352	Marionette	INFO	Listening on port 34425
+1559548073406	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1559548153463	Marionette	INFO	Stopped listening on port 34425
+[Parent 4253, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1559548198768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WJMEdkOJA5N1"
+1559548199234	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559548199234	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559548199234	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559548202202	Marionette	INFO	Listening on port 42167
+1559548202278	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559548235484	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1559549168155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.nWSuyCO2FYLe"
+1559549168637	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559549168637	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559549168637	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559549171652	Marionette	INFO	Listening on port 33655
+1559549171671	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+Exiting due to channel error.
+Exiting due to channel error.
+[Child 5521, Chrome_ChildThread] WARNING: pipe error (28): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Child 5521, Main Thread] WARNING: failed to open shm: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/base/shared_memory_posix.cc, line 142
+[GFX1-]: Failed buffer for 0, -1, 10, 705
+[Child 5521, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 5521, Main Thread] WARNING: failed to open shm: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/base/shared_memory_posix.cc, line 142
+[GFX1-]: Failed buffer for 0, 54, 1270, 1024
+[Child 5521, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 5521, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 5521, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+[Child 5521, Main Thread] WARNING: failed to open shm: Broken pipe: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/base/shared_memory_posix.cc, line 142
+[GFX1-]: Failed buffer for 0, 0, 206, 876
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590001,name=PLayerTransaction::Msg_Update) Channel error: cannot send/recv
+
+[Child 5521, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+1559549254061	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5s67niVKMR2A"
+1559549254520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559549254520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559549254520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559549257248	Marionette	INFO	Listening on port 43669
+1559549257284	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+1559549288343	Marionette	INFO	Stopped listening on port 43669
+[Parent 5723, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1559549316162	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xHP0qGSvpyTe"
+1559549316662	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559549316662	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559549316663	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559549319490	Marionette	INFO	Listening on port 36393
+1559549319577	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559549343361	Marionette	INFO	Stopped listening on port 36393
+[Parent 6007, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1559550420219	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PoWdpIDu7VfU"
+1559550420679	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559550420680	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559550420680	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559550423424	Marionette	INFO	Listening on port 45315
+1559550423435	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+1559550529333	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BmdvynBSGWcw"
+1559550529814	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559550529815	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559550529815	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559550532641	Marionette	INFO	Listening on port 41187
+1559550532685	Marionette	WARN	TLS certificate errors will be ignored for this session
+1559550564323	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1zqeQYvzaf3I"
+1559550564798	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559550564799	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559550564799	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559550567911	Marionette	INFO	Listening on port 35207
+1559550567933	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc9qjcUAAAAADTnJq5kJMjN9aD1lxpRLMnCS2TR&co=aHR0cHM6Ly9mYnNieC5jb206NDQz&hl=en&v=v1558333958099&size=normal&cb=6zbsh37k7j0m, line 197: ReferenceError: recaptcha is not defined
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 7288, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 7288, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559550810048	Marionette	INFO	Stopped listening on port 35207
+[Parent 7018, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 7018, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559550811796	Marionette	INFO	Stopped listening on port 41187
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 6698, Gecko_IOThread] WARNING: pipe error (80): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559550814007	Marionette	INFO	Stopped listening on port 45315
+1559551409755	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.75S3IlsmIoo4"
+1559551410213	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559551410214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559551410214	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559551413040	Marionette	INFO	Listening on port 42213
+1559551413066	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1559554114145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CMWtMYY8wePn"
+1559554114606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559554114606	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559554114607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559554117481	Marionette	INFO	Listening on port 35219
+1559554117555	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1559554239192	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wHGFIdPJRj6v"
+1559554239689	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559554239690	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559554239690	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559554242652	Marionette	INFO	Listening on port 42111
+1559554242710	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221559433603642%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1559554375609	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hH6DP5jErfpZ"
+1559554376115	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559554376116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559554376116	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559554379069	Marionette	INFO	Listening on port 37991
+1559554379120	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: , line 0: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1559556686299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Ew1I68gtekQb"
+1559556686813	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1559556686813	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1559556686814	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1559556689629	Marionette	INFO	Listening on port 40905
+1559556689714	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 8984, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 8984, Gecko_IOThread] WARNING: pipe error (112): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1559556701239	Marionette	INFO	Stopped listening on port 42111
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+JavaScript error: https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/OhqMeE4-xLN.js, line 3: TypeError: The expression cannot be converted to return the specified type.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 9942, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-J8d3lX/firefox-67.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
