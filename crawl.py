@@ -32,8 +32,8 @@ class CrawlerBrowser:
 
 		# email = input("Email or phonenumber: ")
 		# password = getpass.getpass("Password: ")
-		email = "0354505705"
-		password = "facebook235"
+		email = "your email or phonenumber here"
+		password = ""
 
 		try:
 			self.driver.get("https://www.facebook.com/")
@@ -156,7 +156,7 @@ class CrawlerBrowser:
 			if self.read_image_from_url(image_src, imageName) is not None:
 				full_hd_images.append(m[0][0])
 
-			if len(full_hd_images) == 40:
+			if len(full_hd_images) == self.max_images_per_facebook:
 				break
 
 		print("\n[DONE] Facebook {} has finished crawling images!\n".format(homepage))
