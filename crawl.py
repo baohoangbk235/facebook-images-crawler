@@ -1,136 +1,173 @@
+from multiprocessing import Pool
+import time
+import getpass
+import cv2
 from selenium import webdriver 
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-import shutil
-from tqdm import tqdm
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 import requests
-# from bs4 import BeautifulSoup
-import time
+import os
 import re
-import dlib
-import cv2
 from PIL import Image
 from io import BytesIO
 import numpy as np
-import os
+
+class CrawlerBrowser:
+	def __init__(self, timeout=5, display_browser=True, max_images_per_facebook=30):
+		options = Options()
+		if display_browser == False:
+			options.set_headless()
+		options.set_preference("dom.webnotifications.enabled", False)
+		self.driver = webdriver.Firefox(firefox_options=options)
+		# self.driver.set_page_load_timeout(timeout)
+		self.driver_status = True
+		self.homepage = None
+		self.SCROLL_PAUSE_TIME = 2
+		self.max_images_per_facebook = max_images_per_facebook
+		self.end_of_page = False
+
+		# email = input("Email or phonenumber: ")
+		# password = getpass.getpass("Password: ")
+		email = "0354505705"
+		password = "facebook235"
+
+		try:
+			self.driver.get("https://www.facebook.com/")
+			element = self.driver.find_element_by_name("email")
+			element.clear()
+			element.send_keys(email)
+			element = self.driver.find_element_by_name("pass")
+			element.clear()
+			element.send_keys(password)
+			time.sleep(1)
+			element.send_keys(Keys.ENTER)
+			time.sleep(5)
+			print("[INFO] Log in successfully!")
+
+			element = self.driver.find_element_by_class_name("_2s25")
+			self.homepage = element.get_attribute("href")
+
+			self.driver.get(self.homepage + "&sk=friends")
+			time.sleep(2)
+			self.scrollToEnd()
+			time.sleep(2)
+			friendElements = self.driver.find_elements_by_class_name("_5q6s")
+			self.friends = [friendElement.get_attribute("href") for friendElement in friendElements]
+			print("[INFO] Get friendlist successfully!")
+
+		except TimeoutException as ex:
+			print("Exception has been thrown. " + str(ex))
+
+	def scrollToEnd(self):
+	        # Get scroll height
+	        last_height = self.driver.execute_script("return document.body.scrollHeight")
+
+	        while True:
+	                # Scroll down to bottom
+	                self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+	                # Wait to load page
+	                time.sleep(self.SCROLL_PAUSE_TIME)
+
+	                # Calculate new scroll height and compare with last scroll height
+	                new_height = self.driver.execute_script("return document.body.scrollHeight")
+	                if new_height == last_height:
+	                        break
+	                last_height = new_height
+
+	def scrollToBottom(self):
+		last_height = self.driver.execute_script("return document.body.scrollHeight")
+		if not self.end_of_page:
+			self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+			time.sleep(self.SCROLL_PAUSE_TIME)
+		new_height = self.driver.execute_script("return document.body.scrollHeight")
+		if new_height == last_height:
+			self.end_of_page = True
+
+	def read_image_from_url(self, url, name):
+		try:
+			response = requests.get(url)
+			image = Image.open(BytesIO(response.content))
+			image = np.asarray(image)[:, :, ::-1].copy() 
+
+		# Khai báo việc sử dụng các hàm của dlib
+		# hog_face_detector = dlib.get_frontal_face_detector()
+
+		# # Thực hiện xác định bằng HOG và SVM
+		# start = time.time()
+		# faces_hog = hog_face_detector(image, 1)
+		# end = time.time()
+		# print("Hog + SVM Execution time: " + str(end-start))
+		# if len(faces_hog) > 0:
+		#   cv2.imwrite(name, image)
+			cv2.imwrite(name,image)
+			return image
+		except requests.ConnectionError:
+			return None
+
+	def get_homepage(self):
+		return self.homepage
+
+	def get_friendlist(self):
+		return self.friends
+
+	def quit_browser(self):
+		self.driver.close()
+		self.driver_status = False
+
+	def get_images(self, homepage):
+		self.driver.get(homepage + "&sk=photos")
+		# self.scrollToEnd()
+		time.sleep(2)
+		imageElements = self.driver.find_elements_by_css_selector('a._6i9')
+
+		full_hd_images = []
+		wait = WebDriverWait(self.driver, 20)
+		# self.scrollToBottom()
 
 
-def read_image_from_url(url, name):
-	response = requests.get(url)
-	image = Image.open(BytesIO(response.content))
-	image = np.asarray(image)[:, :, ::-1].copy() 
+		for imageElement in imageElements:
+			self.scrollToBottom()
+			self.driver.execute_script("arguments[0].click();", imageElement)
+			time.sleep(2)
+			try:
+				elm_img = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'img.spotlight')))
+				image_src = elm_img.get_attribute("src")
+			except Exception as e:
+				print(str(e))
+				continue
+			print(image_src)
+			p = re.compile('([0-9]+[_0-9a-zA-Z]+\.(png|jpg|gif))')
+			m = p.findall(image_src)
+			tmp = lambda:self.driver.find_element_by_css_selector('a._418x')
+			time.sleep(2)
+			tmp().click()
+			time.sleep(2)
+			match = re.search(r'https://www.facebook.com/profile.php?(.*)', homepage)
+			if match is None:
+				match = re.search(r'https://www.facebook.com/(.*)', homepage)
+			path = os.path.join(os.getcwd(),'images/{}'.format(match.groups()[0].replace('?','')))   
+			if not os.path.exists(path):
+				os.mkdir(path)
+			imageName = os.path.join(path, m[0][0])
+			if self.read_image_from_url(image_src, imageName) is not None:
+				full_hd_images.append(m[0][0])
 
-	# Khai báo việc sử dụng các hàm của dlib
-	hog_face_detector = dlib.get_frontal_face_detector()
+			if len(full_hd_images) == 40:
+				break
 
-	# Thực hiện xác định bằng HOG và SVM
-	start = time.time()
-	faces_hog = hog_face_detector(image, 1)
-	end = time.time()
-	print("Hog + SVM Execution time: " + str(end-start))
-	if len(faces_hog) > 0:
-	  cv2.imwrite(name, image)
+		print("\n[DONE] Facebook {} has finished crawling images!\n".format(homepage))
+		return full_hd_images
 
-def downloadImage(url, img_name):
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open(img_name + ".jpg", 'wb') as f:
-            f.write(response.content)
+	def get_friendlist_images(self):
+		for friend in self.friends[16:]:
+			self.get_images(friend)
 
 
-def scrollToEnd(driver):
-        # Get scroll height
-        last_height = driver.execute_script("return document.body.scrollHeight")
-
-        while True:
-                # Scroll down to bottom
-                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                # Wait to load page
-                time.sleep(SCROLL_PAUSE_TIME)
-
-                # Calculate new scroll height and compare with last scroll height
-                new_height = driver.execute_script("return document.body.scrollHeight")
-                if new_height == last_height:
-                        break
-                last_height = new_height
-
-SCROLL_PAUSE_TIME = 2
-
-def getImages(driver, homepage):
-        driver.get(homepage + "&sk=photos")
-        # scrollToEnd(driver)
-        time.sleep(2)
-        imageElements = driver.find_elements_by_css_selector('a._6i9')
-        # images = [imageElement.get_attribute("href") for imageElement in imageElements]
-        full_hd_images = []
-        count = 0
-        for imageElement in imageElements:
-            imageElement.click()
-            time.sleep(2)
-            driver.implicitly_wait(20)  
-            elm_img = driver.find_element_by_css_selector('img.spotlight')
-            driver.implicitly_wait(20)
-            image_src = elm_img.get_attribute("src")
-            print(image_src)
-            p = re.compile('([0-9]+[_0-9a-zA-Z]+\.(png|jpg|gif))')
-            m = p.findall(image_src)
-            driver.find_element_by_css_selector('a._418x').click()
-            time.sleep(2)
-            driver.implicitly_wait(20)
-            match = re.search(r'https://www.facebook.com/profile.php?(.*)', homepage)
-            if match is None:
-                match = re.search(r'https://www.facebook.com/(.*)', homepage)
-            path = './images/{}'.format(match.groups()[0].replace('?',''))   
-            if not os.path.exists(path):
-                os.mkdir(path)
-            imageName = os.path.join(path, m[0][0])
-            read_image_from_url(image_src, imageName)
-
-            full_hd_images.append(m[0][0])
-        return full_hd_images
-
-def getFriendList(driver, homepage):
-        driver.get(homepage + "&sk=friends")
-        time.sleep(2)
-        scrollToEnd(driver)
-        time.sleep(2)
-        friendElements = driver.find_elements_by_class_name("_5q6s")
-        friends = [friendElement.get_attribute("href") for friendElement in friendElements]
-        return friends
-
-def logInAccount(driver):
-    email = input("Enter email: ")
-    password = input("Enter password: ")
-    driver.get("https://www.facebook.com/")
-
-    element = driver.find_element_by_name("email")
-    element.send_keys(email)
-    element = driver.find_element_by_name("pass")
-    element.send_keys(password)
-    time.sleep(1)
-    element.send_keys(Keys.ENTER)
-    time.sleep(5)
-
-options = Options()
-# options.set_headless()
-options.set_preference("dom.webnotifications.enabled", False)
-driver = webdriver.Firefox(firefox_options=options)
-logInAccount(driver)
-element = driver.find_element_by_class_name("_2s25")
-homepage = element.get_attribute("href")
-# homepage = "https://www.facebook.com/luong.duong.1276/photos?lst=100010797130122%3A100002977864766%3A1559406306"
-
-# images = driver.find_elements_by_class_name("fbPhotoStarGridElement")
-# friends = getFriendList(driver, homepage)
-
-#download image
-
-images = getImages(driver, homepage)
-# count = 0
-# for img in images:
-    # downloadImage(img, str(count))
-    # count += 1
-driver.close()
+if __name__ == '__main__':
+	crawler = CrawlerBrowser()
+	crawler.get_friendlist_images()
+	crawler.quit_browser()
