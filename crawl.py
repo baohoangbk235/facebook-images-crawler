@@ -16,13 +16,15 @@ from PIL import Image
 from io import BytesIO
 import numpy as np
 
+current_path = os.getcwd()
+
 class CrawlerBrowser:
-	def __init__(self, timeout=5, display_browser=True, max_images_per_facebook=30):
+	def __init__(self, timeout=5, display_browser=False, max_images_per_facebook=100):
 		options = Options()
 		if display_browser == False:
 			options.set_headless()
 		options.set_preference("dom.webnotifications.enabled", False)
-		self.driver = webdriver.Firefox(firefox_options=options)
+		self.driver = webdriver.Firefox(current_path,firefox_options=options)
 		# self.driver.set_page_load_timeout(timeout)
 		self.driver_status = True
 		self.homepage = None
@@ -30,10 +32,8 @@ class CrawlerBrowser:
 		self.max_images_per_facebook = max_images_per_facebook
 		self.end_of_page = False
 
-		# email = input("Email or phonenumber: ")
-		# password = getpass.getpass("Password: ")
-		email = "0354505705"
-		password = "facebook235"
+		email = input("Email or phonenumber: ")
+		password = getpass.getpass("Password: ")
 
 		try:
 			self.driver.get("https://www.facebook.com/")
@@ -92,17 +92,6 @@ class CrawlerBrowser:
 			response = requests.get(url)
 			image = Image.open(BytesIO(response.content))
 			image = np.asarray(image)[:, :, ::-1].copy() 
-
-		# Khai báo việc sử dụng các hàm của dlib
-		# hog_face_detector = dlib.get_frontal_face_detector()
-
-		# # Thực hiện xác định bằng HOG và SVM
-		# start = time.time()
-		# faces_hog = hog_face_detector(image, 1)
-		# end = time.time()
-		# print("Hog + SVM Execution time: " + str(end-start))
-		# if len(faces_hog) > 0:
-		#   cv2.imwrite(name, image)
 			cv2.imwrite(name,image)
 			return image
 		except requests.ConnectionError:
@@ -156,7 +145,7 @@ class CrawlerBrowser:
 			if self.read_image_from_url(image_src, imageName) is not None:
 				full_hd_images.append(m[0][0])
 
-			if len(full_hd_images) == 40:
+			if len(full_hd_images) == self.max_images_per_facebook:
 				break
 
 		print("\n[DONE] Facebook {} has finished crawling images!\n".format(homepage))
