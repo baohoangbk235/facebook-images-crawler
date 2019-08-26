@@ -19,7 +19,7 @@ import numpy as np
 current_path = os.getcwd()
 
 class CrawlerBrowser:
-	def __init__(self, timeout=5, display_browser=False, max_images_per_facebook=100):
+	def __init__(self, timeout=5, display_browser=True, max_images_per_facebook=100):
 		options = Options()
 		if display_browser == False:
 			options.set_headless()
@@ -31,19 +31,21 @@ class CrawlerBrowser:
 		self.SCROLL_PAUSE_TIME = 2
 		self.max_images_per_facebook = max_images_per_facebook
 		self.end_of_page = False
+		self.driver.get("https://www.facebook.com/")
 
+	
+	def createFriendList(self):
 		try:
-			self.driver.get("https://www.facebook.com/")
-			while(True):
-				email = input("Email or phonenumber: ")
-				password = getpass.getpass("Password: ")
-				self.login(email, password)
-				try:
-					element = self.driver.find_element_by_name("email")
-					print("Login Failed!")
-				except:
-					print("Login Success!")
-					break
+			# while(True):
+			# 	email = input("Email or phonenumber: ")
+			# 	password = getpass.getpass("Password: ")
+			# 	self.login(email, password)
+			# 	try:
+			# 		element = self.driver.find_element_by_name("email")
+			# 		print("Login Failed!")
+			# 	except:
+			# 		print("Login Success!")
+			# 		break
 			element = self.driver.find_element_by_class_name("_2s25")
 			self.homepage = element.get_attribute("href")
 			self.driver.get(self.homepage + "&sk=friends")
@@ -73,6 +75,14 @@ class CrawlerBrowser:
 		time.sleep(1)
 		element.send_keys(Keys.ENTER)
 		time.sleep(5)
+		try:
+			element = self.driver.find_element_by_name("email")
+			print("Login Failed!")
+			return False
+		except:
+			print("Login Success!")
+			return True
+
 		# print("[INFO] Log in successfully!")
 
 	def scrollToEnd(self):

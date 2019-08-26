@@ -5,8 +5,11 @@ from PyQt5 import QtWidgets
 import time 
 from PyQt5.QtCore import QThread, pyqtSignal
 from PyQt5.QtGui import QPixmap
+from crawl import CrawlerBrowser
 
 TIME_LIMIT = 100
+
+
 
 class Login(QtWidgets.QDialog):
     def __init__(self, parent=None):
@@ -18,6 +21,7 @@ class Login(QtWidgets.QDialog):
         self.setGeometry(0,0,400,300)
         self.buttonLogin = QtWidgets.QPushButton('Login', self)
         self.buttonLogin.clicked.connect(self.handleLogin)
+        self.crawler = CrawlerBrowser()
 
         self.email = QLabel()
         self.email.setText("Email")
@@ -39,9 +43,10 @@ class Login(QtWidgets.QDialog):
 
  
     def handleLogin(self):
-        if (self.textName.text() == 'foo' and
-            self.textPass.text() == 'bar'):
+        check = self.crawler.login(self.textName.text(), self.textPass.text())
+        if check:
             self.accept()
+            # self.crawler.createFriendList()
         else:
             QtWidgets.QMessageBox.warning(
                 self, 'Error', 'Bad user or password')

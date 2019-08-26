@@ -6,6 +6,12 @@ import os
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = "/home/baohoang235/Downloads/facebook-images-crawler/server"
 
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 @app.route('/', methods=['POST'])
 def handle_file():
     file = request.files['file']
