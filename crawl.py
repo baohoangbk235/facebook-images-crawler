@@ -32,35 +32,48 @@ class CrawlerBrowser:
 		self.max_images_per_facebook = max_images_per_facebook
 		self.end_of_page = False
 
-		email = input("Email or phonenumber: ")
-		password = getpass.getpass("Password: ")
-
 		try:
 			self.driver.get("https://www.facebook.com/")
-			element = self.driver.find_element_by_name("email")
-			element.clear()
-			element.send_keys(email)
-			element = self.driver.find_element_by_name("pass")
-			element.clear()
-			element.send_keys(password)
-			time.sleep(1)
-			element.send_keys(Keys.ENTER)
-			time.sleep(5)
-			print("[INFO] Log in successfully!")
-
+			while(True):
+				email = input("Email or phonenumber: ")
+				password = getpass.getpass("Password: ")
+				self.login(email, password)
+				try:
+					element = self.driver.find_element_by_name("email")
+					print("Login Failed!")
+				except:
+					print("Login Success!")
+					break
 			element = self.driver.find_element_by_class_name("_2s25")
 			self.homepage = element.get_attribute("href")
-
 			self.driver.get(self.homepage + "&sk=friends")
 			time.sleep(2)
 			self.scrollToEnd()
 			time.sleep(2)
 			friendElements = self.driver.find_elements_by_class_name("_5q6s")
 			self.friends = [friendElement.get_attribute("href") for friendElement in friendElements]
+			with open('friendlist.txt','w') as f:
+				for friend in self.friends:
+					if friend is not None:
+						f.write(f"{friend}\n") 
+				print("[INFO] Saved friend list to file!")
 			print("[INFO] Get friendlist successfully!")
 
 		except TimeoutException as ex:
+			print("Login unsuccessfully!")
 			print("Exception has been thrown. " + str(ex))
+
+	def login(self, email, password):
+		element = self.driver.find_element_by_name("email")
+		element.clear()
+		element.send_keys(email)
+		element = self.driver.find_element_by_name("pass")
+		element.clear()
+		element.send_keys(password)
+		time.sleep(1)
+		element.send_keys(Keys.ENTER)
+		time.sleep(5)
+		# print("[INFO] Log in successfully!")
 
 	def scrollToEnd(self):
 	        # Get scroll height
@@ -109,14 +122,13 @@ class CrawlerBrowser:
 
 	def get_images(self, homepage):
 		self.driver.get(homepage + "&sk=photos")
-		# self.scrollToEnd()
+		self.scrollToEnd()
 		time.sleep(2)
 		imageElements = self.driver.find_elements_by_css_selector('a._6i9')
 
 		full_hd_images = []
 		wait = WebDriverWait(self.driver, 20)
 		# self.scrollToBottom()
-
 
 		for imageElement in imageElements:
 			self.scrollToBottom()
@@ -128,7 +140,7 @@ class CrawlerBrowser:
 			except Exception as e:
 				print(str(e))
 				continue
-			print(image_src)
+			# print(image_src)
 			p = re.compile('([0-9]+[_0-9a-zA-Z]+\.(png|jpg|gif))')
 			m = p.findall(image_src)
 			tmp = lambda:self.driver.find_element_by_css_selector('a._418x')
@@ -138,7 +150,8 @@ class CrawlerBrowser:
 			match = re.search(r'https://www.facebook.com/profile.php?(.*)', homepage)
 			if match is None:
 				match = re.search(r'https://www.facebook.com/(.*)', homepage)
-			path = os.path.join(os.getcwd(),'images/{}'.format(match.groups()[0].replace('?','')))   
+			user_name =str(match.groups()[0]).split('=')[0].split('?')[0]
+			path = os.path.join(os.getcwd(),'images/{}'.format(user_name))   
 			if not os.path.exists(path):
 				os.mkdir(path)
 			imageName = os.path.join(path, m[0][0])
@@ -152,7 +165,7 @@ class CrawlerBrowser:
 		return full_hd_images
 
 	def get_friendlist_images(self):
-		for friend in self.friends[16:]:
+		for friend in self.friends:
 			self.get_images(friend)
 
 
